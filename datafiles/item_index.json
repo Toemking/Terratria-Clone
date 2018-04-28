@@ -1,0 +1,335 @@
+                    [   
+    {
+        "ID":0,
+        "Name":"Air",
+        "Description":"Nothing",
+        "Damage":0,   
+        "Type":"Nothing",
+        "Solid": true,
+        "Stack_Limit":99
+    },
+    {
+        "ID":1,
+        "Name":"Dirt",
+        "Description":"Some Dirt",
+        "Damage":0,   
+        "Type":"Block",
+        "Solid": false,
+        "Stack_Limit":99
+    },
+    {
+        "ID":2,
+        "Name":"Grass",
+        "Description":"Some Dirt",
+        "Damage":0,   
+        "Type":"Block",
+        "Solid": false,
+        "Stack_Limit":99
+    },
+    {
+        "ID":3,
+        "Name":"Stone"          ,
+        "Description":"Some Dirt",
+        "Damage":0,   
+        "Type":"Block",
+        "Solid": false,
+        "Stack_Limit":99
+    },
+    {
+        "ID":4,
+        "Name":"Wood"          ,
+        "Description":"Some Dirt",
+        "Damage":0,   
+        "Type":"Block",
+        "Solid": false,
+        "Stack_Limit":99
+    },
+    {
+        "ID":5,
+        "Name":"Gold"          ,
+        "Description":"Some Dirt",
+        "Damage":0,   
+        "Type":"Item",
+        "Solid": false,
+        "Stack_Limit":99
+    },
+    {
+        "ID":6,
+        "Name":"Copper"          ,
+        "Description":"Some Dirt",
+        "Damage":0,   
+        "Type":"Item",
+        "Solid": false,
+        "Stack_Limit":99
+    },
+    {
+        "ID":7,
+        "Name":"Battery"          ,
+        "Description":"Some Dirt",
+        "Damage":0,   
+        "Type":"Consumable",
+        "Solid": true,
+        "Stack_Limit":99
+    },
+    {
+        "ID":8,
+        "Name":"Matter Manipulator",
+        "Description":"Some Dirt",
+        "Damage":0,   
+        "Type":"Tool",
+        "Solid": true,
+        "Stack_Limit":1
+    },
+    {
+        "ID":9,
+        "Name":"Stick",
+        "Description":"A stick",
+        "Damage":0,   
+        "Type":"Item",
+        "Solid": true,
+        "Stack_Limit":99
+    },
+    {
+        "ID":10,
+        "Name":"Bat",
+        "Description":"Used to hit stuff",
+        "Damage":60,   
+        "Type":"Weapon",
+        "Solid": true,
+        "Stack_Limit":1
+    },
+    {
+        "ID":11,
+        "Name":"Stone Bricks",
+        "Description":"Some Stone as Bricks",
+        "Damage":0,   
+        "Type":"Block",
+        "Solid": true,
+        "Stack_Limit":99
+    },
+    {
+        "ID":12,
+        "Name":"Coal",
+        "Description":"Some Stone as Bricks",
+        "Damage":0,   
+        "Type":"Item",
+        "Solid": true ,
+        "Stack_Limit":99
+    },
+    {
+        "ID":13,
+        "Name":"Torch",
+        "Description":"Used to burn stuff",
+        "Damage":0,   
+        "Type":"Block",
+        "Solid": false,
+        "Stack_Limit":99
+    },
+    {
+        "ID":14,
+        "Name":"Flamethrower",
+        "Description":"Used to burn sutff",
+        "Damage":60,   
+        "Type":"Gun",
+        "Solid": true,
+        "Stack_Limit":1
+    },
+    {
+        "ID":15,
+        "Name":"Shot Gun",
+        "Description":"Sprays Bullets everywhere",
+        "Damage":70,   
+        "Type":"Gun",
+        "Solid": true,
+        "Stack_Limit":1
+    },
+    {
+        "ID":16,
+        "Name":"Rocket Launcher",
+        "Description":"Blows up stuff",
+        "Damage":85,   
+        "Type":"Gun",
+        "Solid": true,
+        "Stack_Limit":1
+    },
+    {
+        "ID":17,
+        "Name":"Copper Gun",
+        "Description":"Used to Zap Stuff",
+        "Damage":15,   
+        "Type":"Gun",
+        "Solid": true,
+        "Stack_Limit":1
+    },
+    {
+        "ID":18,
+        "Name":"Gold Gun",
+        "Description":"Used to Zap Stuff",
+        "Damage":25,   
+        "Type":"Gun",
+        "Solid": true,
+        "Stack_Limit":1
+    },
+    {
+        "ID":19,
+        "Name":"Wood Planks",
+        "Description":"Wood Planks",
+        "Damage":25,   
+        "Type":"Block",
+        "Solid": true,
+        "Stack_Limit":99
+    },
+    {
+        "ID":20,
+        "Name":"Bricks",
+        "Description":"Some Bricks",
+        "Damage":0,   
+        "Type":"Block",
+        "Solid": true,
+        "Stack_Limit":99
+    },
+    {
+        "ID":21,
+        "Name":"Skill Bench",
+        "Description":"Used to be skillful",
+        "Damage":0,   
+        "Type":"Block",
+        "Solid": true,
+        "Stack_Limit":99
+    },
+    {
+        "ID":22,
+        "Name":"Leaves",
+        "Description":"Green Stuff",
+        "Damage":0,   
+        "Type":"Block",
+        "Solid": true,
+        "Stack_Limit":99
+    },
+    {
+        "ID":23,
+        "Name":"Spear",
+        "Description":"A long pointy stick that can kill things",
+        "Damage":0,   
+        "Type":"Spear",
+        "Solid": true,
+        "Stack_Limit":1
+    },
+    {
+        "ID":24,
+        "Name":"Sword",
+        "Description":"A sharp blade used to slice stuff",
+        "Damage":0,   
+        "Type":"Sword",
+        "Solid": true,
+        "Stack_Limit":1
+    },
+    {
+        "ID":25,
+        "Name":"Ham",
+        "Description":"Some call it tasty some dont",
+        "Damage":0,   
+        "Type":"Food",
+        "Solid": true,
+        "Stack_Limit":99
+    },
+    {
+        "ID":26,
+        "Name":"Cooked Ham",
+        "Description":"Some cooked ham",
+        "Damage":0,   
+        "Type":"Food",
+        "Solid": true,
+        "Stack_Limit":99
+    },
+    {
+        "ID":27,
+        "Name":"Wooden Helmet",
+        "Description":"A wooden helmet",
+        "Damage":0,   
+        "Type":"Helmet",
+        "Solid": true,
+        "Stack_Limit":1
+    },
+    {
+        "ID":28,
+        "Name":"Wooden Chestplate",
+        "Description":"a wooden chestplate",
+        "Damage":0,   
+        "Type":"Chestplate",
+        "Solid": true,
+        "Stack_Limit":1
+    },
+    {
+        "ID":29,
+        "Name":"Wooden Leggings",
+        "Description":"a wodden legging",
+        "Damage":0,   
+        "Type":"Leggings",
+        "Solid": true,
+        "Stack_Limit":1
+    },
+    {
+        "ID":30,
+        "Name":"Copper Helmet",
+        "Description":"A wooden helmet",
+        "Damage":0,   
+        "Type":"Helmet",
+        "Solid": true,
+        "Stack_Limit":1
+    },
+    {
+        "ID":31,
+        "Name":"Copper Chestplate",
+        "Description":"a wooden chestplate",
+        "Damage":0,   
+        "Type":"Chestplate",
+        "Solid": true,
+        "Stack_Limit":1
+    },
+    {
+        "ID":32,
+        "Name":"Copper Leggings",
+        "Description":"a wodden legging",
+        "Damage":0,   
+        "Type":"Leggings",
+        "Solid": true,
+        "Stack_Limit":1
+    },
+    {
+        "ID":33,
+        "Name":"Steel Helmet",
+        "Description":"A wooden helmet",
+        "Damage":0,   
+        "Type":"Helmet",
+        "Solid": true,
+        "Stack_Limit":1
+    },
+    {
+        "ID":34,
+        "Name":"Steel Chestplate",
+        "Description":"a wooden chestplate",
+        "Damage":0,   
+        "Type":"Chestplate",
+        "Solid": true,
+        "Stack_Limit":1
+    },
+    {
+        "ID":35,
+        "Name":"Steel Leggings",
+        "Description":"a wodden legging",
+        "Damage":0,   
+        "Type":"Leggings",
+        "Solid": true,
+        "Stack_Limit":1
+    },
+    {
+        "ID":36,
+        "Name":"Wooden Pickaxe",
+        "Description":"a wodden legging",
+        "Damage":0,   
+        "Type":"Pickaxe",
+        "Solid": true,
+        "Stack_Limit":1
+    }
+]

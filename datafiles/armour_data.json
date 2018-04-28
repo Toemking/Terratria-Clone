@@ -1,0 +1,84 @@
+[
+    {
+        "ID":0,
+        "Body_Position":"Helmet",
+        "Sprite_Name_Run":"player_helm_run_wood",
+        "Sprite_Name_Idle":"player_helm_idle_wood",
+        "Sprite_Name_Jump":"player_helm_jump_wood",
+        "Armour":30,
+        "Name":"Wooden Helmet"
+    },
+    {
+        "ID":1,
+        "Body_Position":"Chestplate",
+        "Sprite_Name_Run":"player_chest_run_wood",
+        "Sprite_Name_Idle":"player_chest_idle_wood",
+        "Sprite_Name_Jump":"player_chest_jump_wood",
+        "Armour":30,
+        "Name":"Wooden Chestplate"
+    },
+    {
+        "ID":2,
+        "Body_Position":"Leggings",
+        "Sprite_Name_Run":"player_legs_run_wood",
+        "Sprite_Name_Idle":"player_legs_idle_wood",
+        "Sprite_Name_Jump":"player_legs_jump_wood",
+        "Armour":30,
+        "Name":"Wooden Leggings"
+    },
+    {
+        "ID":3,
+        "Body_Position":"Helmet",
+        "Sprite_Name_Run":"player_helm_run_copper",
+        "Sprite_Name_Idle":"player_helm_idle_copper",
+        "Sprite_Name_Jump":"player_helm_jump_copper",
+        "Armour":30,
+        "Name":"Copper Helmet"
+    },
+    {
+        "ID":4,
+        "Body_Position":"Chestplate",
+        "Sprite_Name_Run":"player_chest_run_copper",
+        "Sprite_Name_Idle":"player_chest_idle_copper",
+        "Sprite_Name_Jump":"player_chest_jump_copper",
+        "Armour":30,
+        "Name":"Copper Chestplate"
+    },
+    {
+        "ID":5,
+        "Body_Position":"Leggings",
+        "Sprite_Name_Run":"player_legs_run_copper",
+        "Sprite_Name_Idle":"player_legs_idle_copper",
+        "Sprite_Name_Jump":"player_legs_jump_copper",
+        "Armour":30,
+        "Name":"Copper Leggings"
+    },
+    {
+        "ID":6,
+        "Body_Position":"Helmet",
+        "Sprite_Name_Run":"player_helm_run_steel",
+        "Sprite_Name_Idle":"player_helm_idle_steel",
+        "Sprite_Name_Jump":"player_helm_jump_steel",
+        "Armour":30,
+        "Name":"Steel Helmet"
+    },
+    {
+        "ID":7,
+        "Body_Position":"Chestplate",
+        "Sprite_Name_Run":"player_chest_run_steel",
+        "Sprite_Name_Idle":"player_chest_idle_steel",
+        "Sprite_Name_Jump":"player_chest_jump_steel",
+        "Armour":30,
+        "Name":"Steel Chestplate"
+    },
+    {
+        "ID":8,
+        "Body_Position":"Leggings",
+        "Sprite_Name_Run":"player_legs_run_steel",
+        "Sprite_Name_Idle":"player_legs_idle_steel",
+        "Sprite_Name_Jump":"player_legs_jump_steel",
+        "Armour":30,
+        "Name":"Steel Leggings"
+    }
+
+]
