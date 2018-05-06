@@ -1,3 +1,4 @@
+
 	if oGame.draw == true || var_slot < 9 {
 	/// @description Sets the middle slot to matter manipulator
 	global.inventory[# 4, 0] = 8;
@@ -19,6 +20,7 @@
 	var amount = global.mouse_slot[# 0, 1];
 	
 	}
+
 	
 if oGame.draw==true{
 	
@@ -57,6 +59,7 @@ if oGame.draw == true {
 	y = 200+64*floor(var_slot/9)
 	xOffset = 180;
 	global.inventorySlot = 4
+	yOffset = 0;
 	if var_slot == 38 {
 		xOffset = -54;
 		yOffset = 15;
@@ -81,6 +84,7 @@ if oGame.draw == true {
 	}
 } else {
 	y = 0
+	yOffset = 704;
 	xOffset = 0;
 }
 

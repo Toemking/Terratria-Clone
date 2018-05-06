@@ -8,8 +8,8 @@ if !draw{
 	tempXp=global.xp
 }
 for(var i=0;i<3;i++){
-	pluDown[i]=mouse_check_button(mb_left) and mouseOver(camera_get_view_x(view_camera[0])+global.upX+pluX+bboxLeft[0],camera_get_view_y(view_camera[0])+global.upY+allY[i]+bboxTop[0],bboxRight[0],bboxBottom[0])
-	minDown[i]=mouse_check_button(mb_left) and mouseOver(camera_get_view_x(view_camera[0])+global.upX+minX+bboxLeft[0],camera_get_view_y(view_camera[0])+global.upY+allY[i]+bboxTop[0],bboxRight[0],bboxBottom[0])
+	pluDown[i]=mouse_check_button(mb_left) and mouseOver(camera_get_view_x(view_camera[0])+(global.upX+pluX+bboxLeft[0])/2,camera_get_view_y(view_camera[0])+(global.upY+allY[i]+bboxTop[0])/2,(bboxRight[0]/2)-(bboxLeft[0]/2),(bboxBottom[0]/2)-(bboxTop[0]/2))
+	minDown[i]=mouse_check_button(mb_left) and mouseOver(camera_get_view_x(view_camera[0])+(global.upX+minX+bboxLeft[0])/2,camera_get_view_y(view_camera[0])+(global.upY+allY[i]+bboxTop[0])/2,(bboxRight[0]/2)-(bboxLeft[0]/2),(bboxBottom[0]/2)-(bboxTop[0]/2))
 	propXP=tempXp-pluDown[i]+minDown[i]
 	if (pluDown[i] or minDown[i]) and mouse_check_button_pressed(mb_left){
 		proposed[0]=barLevel[0]+pluDown[i]-minDown[i]
@@ -41,7 +41,7 @@ for(var i=0;i<3;i++){
 	}
 }
 
-appDown=mouse_check_button(mb_left) and mouseOver(camera_get_view_x(view_camera[0])+global.upX+appX+bboxLeft[1],camera_get_view_y(view_camera[0])+global.upY+appY+bboxTop[1],bboxRight[1],bboxBottom[1])
+appDown=mouse_check_button(mb_left) and mouseOver(camera_get_view_x(view_camera[0])+(global.upX+appX+bboxLeft[1])/2,camera_get_view_y(view_camera[0])+(global.upY+appY+bboxTop[1])/2,(bboxRight[1]/2)-(bboxLeft[1]/2),(bboxBottom[1]/2)-(bboxTop[1]/2))
 
 if appDown and mouse_check_button_pressed(mb_left){
 	augment[0]=barLevel[0]
@@ -51,7 +51,7 @@ if appDown and mouse_check_button_pressed(mb_left){
 }
 
 for(var m=0;m<3;m++){
-	if(propXP<global.xp and barLevel[m]>augment[m]){
+	if(tempXp<global.xp and barLevel[m]>augment[m]){
 		gray[0,m]=false
 	}
 	else{

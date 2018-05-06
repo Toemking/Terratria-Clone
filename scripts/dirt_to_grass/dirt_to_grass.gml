@@ -1,0 +1,1 @@
+//if ((!place_meeting(x-1,y,oCollison) && (place_meeting(x+16,y,oCollison))) && place_meeting(x,y-1,oDirt)) instance_change(oGrass,true)

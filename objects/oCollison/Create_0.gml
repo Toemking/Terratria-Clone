@@ -1,15 +1,10 @@
 //If inside another object
-surfScale = 1/8
 
-maxSize = 3;
-size = 1;
-minSize = 0.1
-moving_brick = false;
-image_speed = 0;
-image_index = 0;
+lightSize = 0.5;
+lightStrength = 1 
+
+
+
 dur = 0
 max_dur = 45;
-original = true;
-solid_ = true;
-
-global.selected=0
+original = false;

@@ -1,6 +1,6 @@
 var dir = point_direction(x-4*flipped, y-sprite_height/2+8, mouse_x, mouse_y)
 //Flips the player
-flipped = (mouse_x > x) * 2 - 1;
+if rotate_pick == false flipped = (mouse_x > x) * 2 - 1;
 
 
 
@@ -34,9 +34,10 @@ if global.item_data[# global.inventory[# global.inventorySlot, 0], 4] == "Spear"
 if global.inventorySlot == 4 && oGame.draw == false
 {
 	//Check the collison line then draw the line
-	var r = collision_line_point(x-4*flipped, y-sprite_height/2+8, mouse_x, mouse_y, oCollison, true, true);
+	var r = collision_line_point(x-4*flipped, y-sprite_height/2+8, mouse_x, mouse_y, oDrillParent, true, true);
 	draw_line_width_color(x-4*flipped, y-sprite_height/2+8, r[1], r[2],4, c_aqua,  c_aqua)
-	if r[0] != noone && floor(r[1]/32)*32 == r[0].x && floor(r[2]/32)*32 == r[0].y
+	
+	if r[0] != noone && floor(r[1]/r[0].sprite_height)*r[0].sprite_height == r[0].x && floor(r[2]/r[0].sprite_height)*r[0].sprite_height == r[0].y
 	{
 		global.selected = r[0]
 	}
@@ -56,9 +57,9 @@ if global.inventorySlot == 4 && oGame.draw == false
 if global.item_data[# global.inventory[# global.inventorySlot, 0], 4] == "Block" {
 	//Draw the item at the end of the beam. The gun aligned the right way and blue beam pointing towards the block
 	
-	draw_line_width_color(x-4*flipped, y-sprite_height/2+8, (floor(mouse_x/32)*32)+16, (floor(mouse_y/32)*32)+16,4,c_aqua,c_aqua)
-	draw_sprite_ext(sGun, 0, x-4*flipped, y-sprite_height/2+8, 1, flipped, point_direction(x-4*flipped, y-sprite_height/2+8, (floor(mouse_x/32)*32)+16, (floor(mouse_y/32)*32)+16), image_blend, image_alpha)
-	draw_sprite(sItem, global.inventory[# global.inventorySlot, 0], floor(mouse_x/32)*32, floor(mouse_y/32)*32	)
+	draw_line_width_color(x-4*flipped, y-sprite_height/2+8, (floor(mouse_x/16)*16)+8, (floor(mouse_y/16)*16)+8,4,c_aqua,c_aqua)
+	draw_sprite_ext(sGun, 0, x-4*flipped, y-sprite_height/2+8, 1, flipped, point_direction(x-4*flipped, y-sprite_height/2+8, (floor(mouse_x/16)*16)+8, (floor(mouse_y/16)*16)+8), image_blend, image_alpha)
+	draw_sprite(sItem, global.inventory[# global.inventorySlot, 0], floor(mouse_x/16)*16, floor(mouse_y/16)*16	)
 }
 draw_set_color(c_black)
 
@@ -73,7 +74,8 @@ if keyboard_check(ord("A")) {
 }
 
 if global.item_data[# global.inventory[# global.inventorySlot, 0],4] == "Pickaxe" {
-	sprite_set_offset(sItemInventory,9,23)
+	//sprite_set_offset(sItemInventory,9,23)
 	draw_sprite_ext(sItemInventory,global.item_data[# global.inventory[# global.inventorySlot, 0],0],x+pxOffset,y-16,x_scale_ * flipped,1,pick_rotate,c_white,1)
-	
-} else sprite_set_offset(sItemInventory,0,0)
+	//sprite_set_offset(sItemInventory,0,0)
+} 
+

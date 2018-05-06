@@ -25,7 +25,7 @@ if global.item_data[# global.inventory[# global.inventorySlot, 0], 0] == 14 {
 	
 	if global.item_data[# global.inventory[# global.inventorySlot, 0], 0] == 15 {//Shotgun bullets
 		repeat(6) {
-			randomize()
+			//randomize()
 			var bullet_dir = random_range(-8,8)
 			var bullet = instance_create_depth((gun_x+x_offset)+3, (y-sprite_height/2+y_offset)+5, 0, oBullet)
 			bullet.direction = dir+bullet_dir

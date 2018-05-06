@@ -1,5 +1,5 @@
 	// @description Adds an item and a quantity into the inventory in a valid slot.
-/// @function inventory_gain_item(item_ID, amount);
+/// @function (item_ID, amount);
 /// @param item_ID
 /// @param amount
 

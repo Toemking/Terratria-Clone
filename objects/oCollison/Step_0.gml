@@ -1,14 +1,18 @@
-mouse_over = mouseOver(x,y,sprite_get_width(sprite_index),sprite_get_height(sprite_index))
-
-if global.selected == id {
-	
-	global.selX=x
-	global.selY=y
-	global.selSize=size
-	global.drawSel=true
-
+if original == true  && place_meeting(x,y,oAir)  {
+	var air = instance_nearest(x,y,oAir)
+	instance_destroy(air)
 }
 
-if mouse_over == false or global.selected != id or mouse_check_button(mb_left) == false{
-	dur=0	
+
+if global.selected == id {
+
+	global.selX=x
+	global.selY=y
+	global.selSize=1
+	global.drawSel=true
+}
+if place_meeting(x,y,oAir) instance_destroy()
+
+if depth == 3 && !place_meeting(x,y-1,oCollison) {
+	depth = -3
 }

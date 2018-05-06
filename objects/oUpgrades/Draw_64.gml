@@ -1,4 +1,4 @@
-if draw{
+/*if draw{
 	draw_sprite(sUpgrades,0,global.upX,global.upY)
 	color=draw_get_color()
 	draw_set_color(c_white)

@@ -1,4 +1,7 @@
+global.selected=0
 
+set = true
+canCreate = true
 ///@description Create the vars
 speed_ = [0, 0];
 gravity_ = 0.8;
@@ -37,7 +40,6 @@ image_speed = 16;
 //Set the tool to not locked
 global.selected = 0;
 tool_locked = false;
-depth = 1
 
 player_run_current = player_run
 player_idle_current = player_idle
@@ -83,15 +85,7 @@ part_type_blend(smoke,0)
 
 
 em = part_emitter_create(fire)
-inventory_gain_item(27,1)
-inventory_gain_item(28,1)
-inventory_gain_item(29,1)
-inventory_gain_item(30,1)
-inventory_gain_item(31,1)
-inventory_gain_item(32,1)
-inventory_gain_item(33,1)
-inventory_gain_item(34,1)
-inventory_gain_item(36,1)
+
 spearThrust = 0
 swordThrust = 0
 

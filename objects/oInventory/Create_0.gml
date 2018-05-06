@@ -31,8 +31,7 @@ draw = false;
 
 
 
-global.inventory = ds_grid_create(39, 2);
-ds_grid_clear(global.inventory, 0);
+
 
 
 	var slot = 0;

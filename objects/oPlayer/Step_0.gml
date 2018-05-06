@@ -1,5 +1,7 @@
 // @description Player Movement
 
+xChunkCurrent = floor(x/256)
+ychunkCurrent = floor(y/256)
 
 var hinput = keyboard_check (vk_right) - keyboard_check(vk_left);
 
@@ -65,3 +67,29 @@ if rotate_pick = true {
 		pick_rotate = 0
 	}
 }
+//camera_set_view_pos(view_camera[0],clamp(x - camera_get_view_width(view_camera[0])/2,-1536, 768),clamp(y - camera_get_view_height(view_camera[0])/2,-240,640)) 
+camera_set_view_pos(view_camera[0],x - camera_get_view_width(view_camera[0])/2,y - camera_get_view_height(view_camera[0])/2) 
+if instance_exists(world_gen) {
+	if flipped == 1 {
+		if(x >= (global.length/2) && canCreate && global.length <= 1024) {
+			canCreate = false;
+			global.length = generate(global.length)
+			canCreate = true
+		}
+	} else if flipped == -1 {
+		if(x <= (global.length2/2) && canCreate && global.length2 >= -1024 ) {
+			canCreate = false;
+			global.length2 = generate(global.length2 - 768)
+			canCreate = true
+		}
+	}
+}
+
+/*if set == true {
+	set = false;
+	load_data();
+	x = xx
+}
+/*show_debug_message(oPlayer.x)
+show_debug_message(global.length)
+show_debug_message(global.length2)
