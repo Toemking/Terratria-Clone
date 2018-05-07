@@ -1,6 +1,6 @@
 event_inherited()
 image_index = 0;
-lightStrength = 0.9;
+lightStrength = 1;
 image_speed = 0;
 
 

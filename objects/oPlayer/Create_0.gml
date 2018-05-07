@@ -1,5 +1,5 @@
 global.selected=0
-
+depth = -1
 set = true
 canCreate = true
 ///@description Create the vars

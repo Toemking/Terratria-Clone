@@ -21,7 +21,7 @@ if !place_meeting(x, y+1, oCollison) {
 	speed_[ve] += gravity_;
 	image_speed = 0;
 	sprite = player_jump_current
-} else if keyboard_check_pressed(vk_up) {
+} else if  keyboard_check_pressed(vk_up) {
 	speed_[ve] = jump_height_;
 	x_scale_ = image_xscale*.8;
 	y_scale_ = image_yscale*1.4;

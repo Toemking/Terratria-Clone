@@ -27,7 +27,6 @@ for(xx = starting_room; xx < ending_room; xx += 16)
 	//Dirt level
 	for(yy = ah; yy < dirt_level; yy+=16) {
 		var dirt = instance_create_depth(xx, yy+16,0, oDirt)
-		if (yy-ah == 0 || yy-ah == 16 || yy-ah == 32) dirt.depth = -2
 		l = yy
 	
 	}
