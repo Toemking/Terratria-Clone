@@ -76,13 +76,13 @@ if instance_exists(world_gen) {
 			global.length = generate(global.length)
 			canCreate = true
 		}
-	} else if flipped == -1 {
+	} /*else if flipped == -1 {
 		if(x <= (global.length2/2) && canCreate && global.length2 >= -1024 ) {
 			canCreate = false;
 			global.length2 = generate(global.length2 - 768)
 			canCreate = true
 		}
-	}
+	}*/
 }
 
 /*if set == true {

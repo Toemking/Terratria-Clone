@@ -1,13 +1,13 @@
 
 surface_set_target(surf)
 
-draw_clear(c_black)
+draw_clear(c_blue)
 
 
 with(oCollison)
 {
 	gpu_set_blendmode(bm_src_color)
-	draw_sprite_ext(sSquareLight,0,x,y, 0.25,0.25, 0, c_white, lightStrength+1)
+	draw_sprite_ext(sSquareLight,0,x,y, 0.25,0.25, 0, c_white, lightStrength)
 	gpu_set_blendmode(bm_normal)
 }
 

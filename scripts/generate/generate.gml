@@ -1,4 +1,4 @@
-var sh = (room_height / 2) - floor((room_height/10))
+var sh = (room_height / 2) - floor((room_height/20))
 
 sh = floor(sh/ 16) * 16
 
@@ -14,9 +14,11 @@ var l = ah;
 
 for(xx = starting_room; xx < ending_room; xx += 16)
 {
-	instance_create_depth(xx, ah,0, oGrass)
+	var grass = instance_create_depth(xx, ah,0, oGrass)
+	if instance_exists(grass) grass.place = "Grass"
 	if 1 == round(random_range(1,20)) {
 			var tree = instance_create_depth(xx,ah+8,0,oTree)
+			if instance_exists(tree) tree.place = "Above"
 			
 		}
 	
@@ -28,13 +30,15 @@ for(xx = starting_room; xx < ending_room; xx += 16)
 	for(yy = ah; yy < dirt_level; yy+=16) {
 		var dirt = instance_create_depth(xx, yy+16,0, oDirt)
 		l = yy
+		if instance_exists(dirt) dirt.place = "Dirt"
 	
 	}
 	
 	//Stone level
 	for(yy = l; yy < stone_level; yy+=16) {
 		if (yy >= ah) {
-			instance_create_depth(xx, yy+16,0, oStone)
+			var stone = instance_create_depth(xx, yy+16,0, oStone)
+			if instance_exists(stone) stone.place = "Stone"
 			if 1 == round(random_range(1,200)) {
 				ore_vein(round(random_range(1,10)),oCoal)	
 			}
