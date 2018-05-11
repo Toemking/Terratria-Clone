@@ -5,7 +5,7 @@ if rotate_pick == false flipped = (mouse_x > x) * 2 - 1;
 
 
 //Draw the player
-draw_sprite_ext(sprite, image_index, x, ceil(y), x_scale_ * flipped, y_scale_, 0, image_blend, image_alpha)
+draw_sprite_ext(sprite, image_index, x, ceil(y), x_scale_ * flipped, y_scale_, 0, image_blend, alpha_)
 //Draw the armour
 
 

@@ -1,3 +1,6 @@
+global.block_length = 0;
+above_ground = array_create(100000)
+
 global.inventory = ds_grid_create(39, 2);
 ds_grid_clear(global.inventory, 0);
 

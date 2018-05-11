@@ -419,6 +419,25 @@
             }
         },
         {
+            "Key": "1e74fb9a-eb1c-43a9-beac-ccbab33aa854",
+            "Value": {
+                "id": "0a73d043-f5e7-4eba-a9c4-a9ec05f4a572",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/lighting_check_place\/lighting_check_place.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1f02be7e-aed7-40a3-80d7-4884d650f09d",
             "Value": {
                 "id": "3944b72b-9d1a-451b-a6d6-2619c0605995",
@@ -435,6 +454,25 @@
                 ],
                 "resourcePath": "fonts\/fDefault\/fDefault.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "212042a8-1418-49f4-bd6e-c2c4628f29b1",
+            "Value": {
+                "id": "ac48560b-6aaf-4791-8af1-ee13e18db438",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/212042a8-1418-49f4-bd6e-c2c4628f29b1.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -606,6 +644,25 @@
                 ],
                 "resourcePath": "sprites\/player_helm_idle_wood\/player_helm_idle_wood.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "30c383d9-3527-42a8-ba99-096d3c1a5170",
+            "Value": {
+                "id": "2c215444-e25e-43b7-91f7-4a9168429d66",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/lighting_move\/lighting_move.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1859,6 +1916,25 @@
                     "default"
                 ],
                 "resourcePath": "scripts\/inventory_load\/inventory_load.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "87bb447d-338c-4b08-82b6-fbc9f11b433a",
+            "Value": {
+                "id": "7ecb94e1-b632-4b6a-9e45-3f95a510b786",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/light_create\/light_create.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3804,7 +3880,10 @@
         "00f16bf7-7c10-43e4-8e83-2b9f12f9d306",
         "bfbab0ab-693b-4332-9074-14a2247977ec",
         "f5da056e-95c5-4a3c-9c44-28b7bfa13687",
-        "72960ab3-815f-4852-853e-3bd3df0b0cb6"
+        "72960ab3-815f-4852-853e-3bd3df0b0cb6",
+        "30c383d9-3527-42a8-ba99-096d3c1a5170",
+        "1e74fb9a-eb1c-43a9-beac-ccbab33aa854",
+        "87bb447d-338c-4b08-82b6-fbc9f11b433a"
     ],
     "tutorial": ""
 }

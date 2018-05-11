@@ -14,11 +14,19 @@ var l = ah;
 
 for(xx = starting_room; xx < ending_room; xx += 16)
 {
+	
+	above_ground[global.block_length] = ah;
+	global.block_length ++
+	
 	var grass = instance_create_depth(xx, ah,0, oGrass)
-	if instance_exists(grass) grass.place = "Grass"
+	
+	if instance_exists(grass) {
+		grass.place = "Grass"
+		
+	}
 	if 1 == round(random_range(1,20)) {
 			var tree = instance_create_depth(xx,ah+8,0,oTree)
-			if instance_exists(tree) tree.place = "Above"
+			if	instance_exists(tree) tree.place = "Above"
 			
 		}
 	

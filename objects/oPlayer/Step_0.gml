@@ -76,20 +76,15 @@ if instance_exists(world_gen) {
 			global.length = generate(global.length)
 			canCreate = true
 		}
-	} /*else if flipped == -1 {
-		if(x <= (global.length2/2) && canCreate && global.length2 >= -1024 ) {
-			canCreate = false;
-			global.length2 = generate(global.length2 - 768)
-			canCreate = true
-		}
-	}*/
+	} 
 }
-
-/*if set == true {
-	set = false;
-	load_data();
-	x = xx
+//Set the alpha of the player to draw to
+var light_below = instance_nearest(x,y+1,oCollison)
+if !place_meeting(x,y+1,light_below) {
+	light_below = noone;
+	
 }
-/*show_debug_message(oPlayer.x)
-show_debug_message(global.length)
-show_debug_message(global.length2)
+if instance_exists(light_below) {
+	alpha_ = light_below.lightStrength + 0.05
+	
+}

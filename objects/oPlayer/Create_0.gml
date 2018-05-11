@@ -96,3 +96,5 @@ pick_rotate = 0;
 pix_rotate = 0
 rotate_pick = false;	
 
+
+alpha_ = 1;

@@ -1,5 +1,5 @@
 draw_self()
 draw_set_color(c_black)
-
-
+draw_set_font(fDefault)
+draw_text(x,y,world_gen.above_ground[floor(x/16)])
 if dur != 0 and global.selected == id draw_sprite(sBlockDestroy, ceil(dur/10),x,y)

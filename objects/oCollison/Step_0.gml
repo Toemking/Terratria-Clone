@@ -13,10 +13,3 @@ if global.selected == id {
 }
 if place_meeting(x,y,oAir) instance_destroy()
 
-
-
-if !place_meeting(x,y-1,oCollison) && place == "Stone" && lightChange == true {
-	lightStrength += 1;
-	lightChange = false
-
-}

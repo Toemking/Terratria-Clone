@@ -8,6 +8,10 @@ if !position_meeting(mouse_x,mouse_y,oCollison) && global.item_data[# global.inv
 		var create_inv = instance_create_depth((floor(mouse_x/16)*16), (floor(mouse_y/16)*16), 0, asset_get_index("o"+global.item_data[# global.inventory[# global.inventorySlot, 0], 1]))
 		create_inv.image_index = global.inventory[# global.inventorySlot, 0]
 		create_inv.original = true
+		create_inv.lightStrength = (light_create(create_inv.x+16,create_inv.y+0) + light_create(create_inv.x-16,create_inv.y+0) + light_create(create_inv.x+0,create_inv.y+16))/3
+		
+		
+		
 		//If the block placed is a torch
 		if create_inv.image_index == 13 
 		{
